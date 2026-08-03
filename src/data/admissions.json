@@ -1,0 +1,78 @@
+{
+  "process": [
+    {
+      "step": 1,
+      "title": "Enquiry & Registration",
+      "description": "Visit the school office or fill out the online enquiry form. Collect the admission application from the office or download it from our website.",
+      "icon": "ClipboardList",
+      "color": "#3B82F6"
+    },
+    {
+      "step": 2,
+      "title": "Submit Application",
+      "description": "Complete the application form and submit it along with required documents and the application fee at the school office.",
+      "icon": "FileText",
+      "color": "#10B981"
+    },
+    {
+      "step": 3,
+      "title": "Entrance Assessment",
+      "description": "Students appear for a grade-appropriate assessment in English, Mathematics, and General Knowledge. Primary section students have an informal interaction.",
+      "icon": "PenTool",
+      "color": "#8B5CF6"
+    },
+    {
+      "step": 4,
+      "title": "Interview & Interaction",
+      "description": "A brief interaction with the student and parents to understand the child's interests, strengths, and any special needs.",
+      "icon": "MessageSquare",
+      "color": "#F59E0B"
+    },
+    {
+      "step": 5,
+      "title": "Confirmation & Enrollment",
+      "description": "Selected students receive an admission offer. Complete the enrollment by paying the admission fee and submitting original documents.",
+      "icon": "CheckCircle",
+      "color": "#EF4444"
+    }
+  ],
+  "eligibility": [
+    { "grade": "LKG", "ageRequirement": "3 years as of June 1", "documents": "Birth Certificate, Aadhaar Card, 4 Passport Photos" },
+    { "grade": "UKG", "ageRequirement": "4 years as of June 1", "documents": "Birth Certificate, Aadhaar Card, Previous TC, 4 Photos" },
+    { "grade": "Grade 1 – 5", "ageRequirement": "Age appropriate", "documents": "Birth Certificate, Aadhaar Card, Previous TC & Report Card, 4 Photos" },
+    { "grade": "Grade 6 – 8", "ageRequirement": "Age appropriate", "documents": "Birth Certificate, Aadhaar Card, TC, Last 2 Years Report Cards, 4 Photos" },
+    { "grade": "Grade 9 – 10", "ageRequirement": "Age appropriate", "documents": "Birth Certificate, Aadhaar Card, TC, Report Cards, Community Certificate, 4 Photos" },
+    { "grade": "Grade 11", "ageRequirement": "Passed Grade 10", "documents": "Grade 10 Marks Sheet, TC, Aadhaar, Community Certificate, Conduct Certificate, 4 Photos" }
+  ],
+  "feeStructure": [
+    { "category": "Primary (LKG – Grade 5)", "admissionFee": "₹5,000", "annualTuition": "₹24,000", "termFee": "₹8,000" },
+    { "category": "Middle (Grade 6 – 8)", "admissionFee": "₹6,000", "annualTuition": "₹30,000", "termFee": "₹10,000" },
+    { "category": "High (Grade 9 – 10)", "admissionFee": "₹7,000", "annualTuition": "₹36,000", "termFee": "₹12,000" },
+    { "category": "Higher Secondary (Grade 11 – 12)", "admissionFee": "₹8,000", "annualTuition": "₹42,000", "termFee": "₹14,000" }
+  ],
+  "importantDates": [
+    { "event": "Application Forms Available", "date": "January 15, 2026" },
+    { "event": "Last Date for Submission", "date": "March 31, 2026" },
+    { "event": "Entrance Assessment", "date": "April 10 – 12, 2026" },
+    { "event": "Results Announcement", "date": "April 20, 2026" },
+    { "event": "Admission Confirmation Deadline", "date": "May 5, 2026" },
+    { "event": "Academic Year Begins", "date": "June 2, 2026" }
+  ],
+  "scholarships": [
+    {
+      "name": "Merit Scholarship",
+      "criteria": "Students scoring above 95% in previous board exams",
+      "benefit": "50% tuition fee waiver"
+    },
+    {
+      "name": "Sports Scholarship",
+      "criteria": "State or national level sports achievers",
+      "benefit": "Up to 75% tuition fee waiver"
+    },
+    {
+      "name": "Sibling Discount",
+      "criteria": "Second child enrolled in the school",
+      "benefit": "10% tuition fee discount"
+    }
+  ]
+}

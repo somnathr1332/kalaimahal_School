@@ -1,0 +1,28 @@
+{
+  "categories": [
+    { "id": "all", "label": "All Photos" },
+    { "id": "campus", "label": "Campus" },
+    { "id": "events", "label": "Events" },
+    { "id": "sports", "label": "Sports" },
+    { "id": "classroom", "label": "Classroom" },
+    { "id": "labs", "label": "Laboratories" }
+  ],
+  "images": [
+    { "id": "g01", "category": "campus", "title": "School Main Building", "src": "/images/gallery/school-building.webp" },
+    { "id": "g02", "category": "campus", "title": "School Entrance Gate", "src": "/images/gallery/entrance.webp" },
+    { "id": "g03", "category": "campus", "title": "School Garden & Courtyard", "src": "/images/gallery/garden.webp" },
+    { "id": "g04", "category": "classroom", "title": "Smart Classroom in Action", "src": "/images/gallery/classroom.webp" },
+    { "id": "g05", "category": "classroom", "title": "Primary Section Activities", "src": "/images/gallery/primary-class.webp" },
+    { "id": "g06", "category": "labs", "title": "Physics Laboratory", "src": "/images/gallery/physics-lab.webp" },
+    { "id": "g07", "category": "labs", "title": "Computer Laboratory", "src": "/images/gallery/computer-lab.webp" },
+    { "id": "g08", "category": "labs", "title": "Chemistry Laboratory", "src": "/images/gallery/chemistry-lab.webp" },
+    { "id": "g09", "category": "sports", "title": "Annual Sports Day", "src": "/images/gallery/sports-day.webp" },
+    { "id": "g10", "category": "sports", "title": "Cricket Ground", "src": "/images/gallery/cricket.webp" },
+    { "id": "g11", "category": "events", "title": "Annual Day Celebrations", "src": "/images/gallery/annual-day.webp" },
+    { "id": "g12", "category": "events", "title": "Science Exhibition Projects", "src": "/images/gallery/science-exhibition.webp" },
+    { "id": "g13", "category": "campus", "title": "School Library", "src": "/images/gallery/library.webp" },
+    { "id": "g14", "category": "events", "title": "Independence Day Flag Hoisting", "src": "/images/gallery/independence-day.webp" },
+    { "id": "g15", "category": "sports", "title": "Basketball Court", "src": "/images/gallery/basketball.webp" },
+    { "id": "g16", "category": "classroom", "title": "Art & Craft Session", "src": "/images/gallery/art-class.webp" }
+  ]
+}

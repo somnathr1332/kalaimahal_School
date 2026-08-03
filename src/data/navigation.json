@@ -1,0 +1,31 @@
+{
+  "mainNav": [
+    { "name": "Home", "to": "/" },
+    { "name": "About", "to": "/about" },
+    { "name": "Academics", "to": "/academics" },
+    { "name": "Campus", "to": "/campus" },
+    { "name": "Gallery", "to": "/gallery" },
+    { "name": "Achievements", "to": "/achievements" },
+    { "name": "Events", "to": "/events" },
+    { "name": "Admissions", "to": "/admissions" },
+    { "name": "Contact", "to": "/contact" }
+  ],
+  "footerLinks": {
+    "quickLinks": [
+      { "name": "Home", "to": "/" },
+      { "name": "About Us", "to": "/about" },
+      { "name": "Academics", "to": "/academics" },
+      { "name": "Admissions", "to": "/admissions" },
+      { "name": "Gallery", "to": "/gallery" },
+      { "name": "Contact", "to": "/contact" }
+    ],
+    "resources": [
+      { "name": "FAQ", "to": "/faq" },
+      { "name": "Events", "to": "/events" },
+      { "name": "Achievements", "to": "/achievements" },
+      { "name": "Campus Tour", "to": "/campus" },
+      { "name": "Privacy Policy", "to": "/privacy" },
+      { "name": "Terms & Conditions", "to": "/terms" }
+    ]
+  }
+}

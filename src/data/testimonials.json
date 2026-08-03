@@ -1,0 +1,46 @@
+{
+  "testimonials": [
+    {
+      "id": "t1",
+      "name": "Mrs. Kavitha Sundaram",
+      "role": "Parent of Grade 8 student",
+      "quote": "My son has been studying here for 5 years and the transformation in his confidence and academic performance has been remarkable. The teachers genuinely care about every child's growth.",
+      "rating": 5
+    },
+    {
+      "id": "t2",
+      "name": "Mr. Rajesh Kumar",
+      "role": "Parent of Grade 12 student",
+      "quote": "The school's focus on both academics and extracurricular activities is outstanding. My daughter secured a medical seat thanks to the excellent guidance from the faculty.",
+      "rating": 5
+    },
+    {
+      "id": "t3",
+      "name": "Anitha R.",
+      "role": "Alumna — Batch of 2022",
+      "quote": "Kalaimahal School shaped who I am today. The values, discipline, and love for learning that I developed here continue to guide me in my engineering journey at Anna University.",
+      "rating": 5
+    },
+    {
+      "id": "t4",
+      "name": "Mr. P. Mohan",
+      "role": "Parent of Grade 3 student",
+      "quote": "As a parent of a primary student, I'm impressed by the school's play-based learning approach. My child actually looks forward to going to school every day!",
+      "rating": 5
+    },
+    {
+      "id": "t5",
+      "name": "Deepika M.",
+      "role": "Alumna — Batch of 2020",
+      "quote": "The school gave me opportunities to compete at the state level in debates and science exhibitions. Those experiences built my communication skills and opened many doors for me.",
+      "rating": 5
+    },
+    {
+      "id": "t6",
+      "name": "Mrs. Lakshmi Narayanan",
+      "role": "Parent of Grade 6 & 9 students",
+      "quote": "Having both my children here, I can say the school consistently maintains high standards. The infrastructure, especially the science labs and library, is excellent for a school in our town.",
+      "rating": 5
+    }
+  ]
+}

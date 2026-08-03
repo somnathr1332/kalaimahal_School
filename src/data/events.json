@@ -1,0 +1,100 @@
+{
+  "upcoming": [
+    {
+      "id": "evt-001",
+      "title": "Annual Day Celebrations 2025",
+      "date": "2025-09-15",
+      "time": "9:00 AM – 4:00 PM",
+      "type": "cultural",
+      "description": "A grand celebration of talent with cultural performances, prize distribution, and a special address by the chief guest. Parents and alumni are warmly invited.",
+      "location": "School Auditorium",
+      "highlight": true
+    },
+    {
+      "id": "evt-002",
+      "title": "Science Exhibition",
+      "date": "2025-08-22",
+      "time": "10:00 AM – 3:00 PM",
+      "type": "academic",
+      "description": "Students from all grades showcase innovative science projects and working models. Open to parents and neighbouring schools.",
+      "location": "Science Block"
+    },
+    {
+      "id": "evt-003",
+      "title": "Inter-House Sports Day",
+      "date": "2025-10-05",
+      "time": "8:00 AM – 5:00 PM",
+      "type": "sports",
+      "description": "A full day of athletic competitions including track events, team sports, and the prestigious Inter-House Trophy.",
+      "location": "School Playground"
+    },
+    {
+      "id": "evt-004",
+      "title": "Parent-Teacher Meeting",
+      "date": "2025-08-10",
+      "time": "9:00 AM – 1:00 PM",
+      "type": "academic",
+      "description": "First-term progress review. Parents can meet class teachers to discuss their child's academic performance and development.",
+      "location": "Respective Classrooms"
+    },
+    {
+      "id": "evt-005",
+      "title": "Independence Day Celebrations",
+      "date": "2025-08-15",
+      "time": "8:00 AM – 11:00 AM",
+      "type": "festival",
+      "description": "Flag hoisting ceremony followed by patriotic songs, speeches, and cultural programmes by students.",
+      "location": "School Ground"
+    }
+  ],
+  "past": [
+    {
+      "id": "evt-p01",
+      "title": "Republic Day Celebrations",
+      "date": "2025-01-26",
+      "type": "festival",
+      "description": "A colourful celebration with flag hoisting, march past, and patriotic performances."
+    },
+    {
+      "id": "evt-p02",
+      "title": "Pongal Festival",
+      "date": "2025-01-14",
+      "type": "cultural",
+      "description": "Traditional Pongal celebrations with rangoli, kolam, and cultural programmes."
+    },
+    {
+      "id": "evt-p03",
+      "title": "District Quiz Competition — Winners",
+      "date": "2024-12-08",
+      "type": "academic",
+      "description": "Our school team won the Mayiladuthurai District Inter-School Quiz Competition."
+    },
+    {
+      "id": "evt-p04",
+      "title": "Annual Sports Meet 2024",
+      "date": "2024-11-20",
+      "type": "sports",
+      "description": "Three days of sporting excellence with 500+ students participating across 30 events."
+    },
+    {
+      "id": "evt-p05",
+      "title": "World Environment Day — Tree Planting Drive",
+      "date": "2024-06-05",
+      "type": "cultural",
+      "description": "Students and staff planted 500 saplings in and around the school campus."
+    },
+    {
+      "id": "evt-p06",
+      "title": "Career Guidance Seminar",
+      "date": "2024-09-15",
+      "type": "academic",
+      "description": "Expert sessions on engineering, medical, and civil services career paths for Grade 10-12 students."
+    }
+  ],
+  "eventTypes": {
+    "academic": { "label": "Academic", "color": "#3B82F6" },
+    "sports": { "label": "Sports", "color": "#10B981" },
+    "cultural": { "label": "Cultural", "color": "#8B5CF6" },
+    "festival": { "label": "Festival", "color": "#F59E0B" }
+  }
+}

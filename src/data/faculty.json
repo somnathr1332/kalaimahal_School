@@ -1,0 +1,66 @@
+{
+  "departments": [
+    {
+      "name": "Mathematics",
+      "head": "Mr. V. Krishnamurthy",
+      "qualification": "M.Sc., M.Ed.",
+      "experience": "22 years",
+      "icon": "Calculator"
+    },
+    {
+      "name": "Science",
+      "head": "Mrs. P. Lakshmi",
+      "qualification": "M.Sc. Chemistry, B.Ed.",
+      "experience": "18 years",
+      "icon": "FlaskConical"
+    },
+    {
+      "name": "English",
+      "head": "Mrs. R. Jayanthi",
+      "qualification": "M.A. English, M.Phil., B.Ed.",
+      "experience": "20 years",
+      "icon": "BookOpen"
+    },
+    {
+      "name": "Tamil",
+      "head": "Mr. K. Senthilkumar",
+      "qualification": "M.A. Tamil, B.Ed.",
+      "experience": "15 years",
+      "icon": "Languages"
+    },
+    {
+      "name": "Social Science",
+      "head": "Mr. A. Rajesh",
+      "qualification": "M.A. History, B.Ed.",
+      "experience": "16 years",
+      "icon": "Globe"
+    },
+    {
+      "name": "Computer Science",
+      "head": "Ms. S. Divya",
+      "qualification": "M.C.A., B.Ed.",
+      "experience": "12 years",
+      "icon": "Monitor"
+    },
+    {
+      "name": "Physical Education",
+      "head": "Mr. M. Arun Kumar",
+      "qualification": "M.P.Ed.",
+      "experience": "14 years",
+      "icon": "Dumbbell"
+    },
+    {
+      "name": "Commerce",
+      "head": "Mrs. N. Meenakshi",
+      "qualification": "M.Com., M.Phil., B.Ed.",
+      "experience": "17 years",
+      "icon": "TrendingUp"
+    }
+  ],
+  "stats": {
+    "totalTeachers": 120,
+    "phdHolders": 8,
+    "avgExperience": 15,
+    "studentTeacherRatio": "20:1"
+  }
+}

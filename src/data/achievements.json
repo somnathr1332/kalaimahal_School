@@ -1,0 +1,124 @@
+{
+  "categories": [
+    {
+      "id": "academic",
+      "name": "Academic Excellence",
+      "icon": "Award",
+      "items": [
+        {
+          "title": "District Topper — Grade 12 Science",
+          "year": 2025,
+          "description": "Karthik Rajan M. scored 594/600 in the Tamil Nadu State Board HSC examinations.",
+          "highlight": true
+        },
+        {
+          "title": "100% Pass Rate — Grade 10",
+          "year": 2024,
+          "description": "All 175 students cleared the SSLC examinations with a 100% pass rate."
+        },
+        {
+          "title": "Science Olympiad — State Level Gold",
+          "year": 2024,
+          "description": "3 students won gold medals at the Tamil Nadu State Science Olympiad."
+        },
+        {
+          "title": "Math Talent Search — National Finalist",
+          "year": 2023,
+          "description": "Anitha R. reached the national finals of the MTSE competition."
+        },
+        {
+          "title": "Best School Award — District Level",
+          "year": 2023,
+          "description": "Awarded Best School in Mayiladuthurai district by the Department of Education."
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports & Athletics",
+      "icon": "Trophy",
+      "items": [
+        {
+          "title": "District Cricket Champions",
+          "year": 2025,
+          "description": "Under-17 boys cricket team won the Mayiladuthurai District Championship.",
+          "highlight": true
+        },
+        {
+          "title": "State Level Kabaddi — Runner Up",
+          "year": 2024,
+          "description": "Girls kabaddi team secured second place at the Tamil Nadu State Championship."
+        },
+        {
+          "title": "Inter-School Athletics — 12 Gold Medals",
+          "year": 2024,
+          "description": "Our athletes swept 12 gold medals at the District Inter-School Athletics Meet."
+        },
+        {
+          "title": "National Level Badminton",
+          "year": 2023,
+          "description": "Ramesh K. represented Tamil Nadu at the National School Games in Badminton."
+        }
+      ]
+    },
+    {
+      "id": "cultural",
+      "name": "Cultural & Arts",
+      "icon": "Music",
+      "items": [
+        {
+          "title": "State Level Bharatanatyam — First Prize",
+          "year": 2025,
+          "description": "Swetha M. won first prize at the Tamil Nadu State Cultural Festival."
+        },
+        {
+          "title": "District Debate Championship — Winners",
+          "year": 2024,
+          "description": "Our debate team won the inter-school district debate competition."
+        },
+        {
+          "title": "National Science Exhibition — Special Mention",
+          "year": 2024,
+          "description": "Our students' project on solar-powered water purification received a special mention."
+        },
+        {
+          "title": "Tamil Literary Festival — Best School",
+          "year": 2023,
+          "description": "Awarded Best Participating School at the Regional Tamil Literary Festival."
+        }
+      ]
+    }
+  ],
+  "notableAlumni": [
+    {
+      "name": "Dr. K. Priya",
+      "batch": "1998",
+      "achievement": "MBBS, MD — Leading cardiologist at AIIMS, New Delhi",
+      "icon": "Stethoscope"
+    },
+    {
+      "name": "Mr. S. Venkatesh",
+      "batch": "2002",
+      "achievement": "IAS Officer — District Collector, Thanjavur",
+      "icon": "Landmark"
+    },
+    {
+      "name": "Ms. L. Anandhi",
+      "batch": "2005",
+      "achievement": "Software Engineer — Senior Director at Google, Bangalore",
+      "icon": "Code"
+    },
+    {
+      "name": "Mr. R. Aravind",
+      "batch": "2008",
+      "achievement": "National Level Cricketer — Tamil Nadu Ranji Team",
+      "icon": "Trophy"
+    }
+  ],
+  "stats": {
+    "totalAwards": 350,
+    "stateToppers": 25,
+    "districtChampionships": 45,
+    "nationalParticipants": 18
+  }
+}

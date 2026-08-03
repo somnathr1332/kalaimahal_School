@@ -1,0 +1,84 @@
+{
+  "categories": [
+    {
+      "name": "Admissions",
+      "items": [
+        {
+          "question": "When does the admission process begin?",
+          "answer": "The admission process typically begins in January each year. Application forms are available from January 15th at the school office and on our website. The last date for submission is March 31st."
+        },
+        {
+          "question": "Is there an entrance exam for admission?",
+          "answer": "Yes, students applying for Grade 1 and above are required to appear for a grade-appropriate entrance assessment in English, Mathematics, and General Knowledge. For LKG and UKG, there is an informal interaction session."
+        },
+        {
+          "question": "What documents are required for admission?",
+          "answer": "Required documents include: Birth Certificate, Aadhaar Card, Transfer Certificate from previous school, last two years' report cards, community certificate (for Grade 9+), conduct certificate, and 4 passport-size photographs."
+        },
+        {
+          "question": "Are scholarships available?",
+          "answer": "Yes, we offer Merit Scholarships (50% fee waiver for 95%+ scorers), Sports Scholarships (up to 75% waiver for state/national athletes), and a Sibling Discount (10% for second child)."
+        }
+      ]
+    },
+    {
+      "name": "Academics",
+      "items": [
+        {
+          "question": "Which board is the school affiliated with?",
+          "answer": "Kalaimahal Matriculation Higher Secondary School is affiliated with the Tamil Nadu State Board of Education."
+        },
+        {
+          "question": "What streams are available in Higher Secondary?",
+          "answer": "We offer three streams: Science with Maths (Physics, Chemistry, Maths, Computer Science), Science with Biology (Physics, Chemistry, Biology, Zoology), and Commerce (Accountancy, Commerce, Economics, Business Maths/Computer Applications)."
+        },
+        {
+          "question": "How are students assessed?",
+          "answer": "Students undergo continuous assessment through unit tests, quarterly exams, half-yearly exams, and annual exams. Regular formative assessments and project work are also integral to our evaluation system."
+        },
+        {
+          "question": "Do you provide coaching for competitive exams?",
+          "answer": "Yes, we offer additional coaching support for JEE, NEET, and other competitive exams for students in Grades 11 and 12 through special after-school sessions."
+        }
+      ]
+    },
+    {
+      "name": "Campus & Facilities",
+      "items": [
+        {
+          "question": "Does the school have a transport facility?",
+          "answer": "Yes, the school operates a fleet of buses covering major routes in and around Mayiladuthurai. Routes and fees can be obtained from the school transport office."
+        },
+        {
+          "question": "Is there a canteen or food service?",
+          "answer": "Yes, the school has a hygienic canteen that serves nutritious meals and snacks. Students can also bring their own lunch. Special dietary needs are accommodated upon request."
+        },
+        {
+          "question": "What sports facilities are available?",
+          "answer": "Our campus features a cricket pitch, football field, basketball court, volleyball court, 200m athletic track, indoor games room with table tennis and chess, and a dedicated yoga room."
+        }
+      ]
+    },
+    {
+      "name": "General",
+      "items": [
+        {
+          "question": "What are the school timings?",
+          "answer": "School hours are 8:30 AM to 4:00 PM, Monday through Saturday. The school office is open from 9:00 AM to 5:00 PM."
+        },
+        {
+          "question": "Is there a uniform policy?",
+          "answer": "Yes, students are required to wear the prescribed school uniform on all working days. The uniform can be purchased from the school's designated vendor. Sports uniform is worn on designated PT days."
+        },
+        {
+          "question": "How can parents communicate with teachers?",
+          "answer": "Parents can communicate through the school diary, scheduled Parent-Teacher Meetings (held quarterly), phone calls during office hours, or by scheduling an appointment through the school office."
+        },
+        {
+          "question": "Does the school organise field trips?",
+          "answer": "Yes, educational excursions and field trips are organised for different grades throughout the academic year. These include visits to museums, science centres, historical sites, and nature parks."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "facilities": [
+    {
+      "id": "library",
+      "name": "Library & Reading Room",
+      "description": "A vast collection of over 15,000 books, journals, and digital resources. The library features a dedicated reading room, reference section, and a digital catalogue system for seamless access.",
+      "icon": "BookOpen",
+      "image": "/images/campus/library.webp",
+      "stats": "15,000+ Books"
+    },
+    {
+      "id": "science-lab",
+      "name": "Science Laboratories",
+      "description": "Fully equipped Physics, Chemistry, and Biology laboratories with modern instruments and safety equipment. Students conduct hands-on experiments from Grade 6 onwards.",
+      "icon": "FlaskConical",
+      "image": "/images/campus/science-lab.webp",
+      "stats": "3 Dedicated Labs"
+    },
+    {
+      "id": "computer-lab",
+      "name": "Computer Laboratory",
+      "description": "State-of-the-art computer lab with 60 workstations, high-speed internet, and the latest software for programming, design, and digital literacy classes.",
+      "icon": "Monitor",
+      "image": "/images/campus/computer-lab.webp",
+      "stats": "60 Workstations"
+    },
+    {
+      "id": "smart-classroom",
+      "name": "Smart Classrooms",
+      "description": "Interactive smart boards and projectors in every classroom, enabling multimedia-rich teaching with digital textbooks, videos, and interactive quizzes.",
+      "icon": "Presentation",
+      "image": "/images/campus/smart-classroom.webp",
+      "stats": "All Classrooms"
+    },
+    {
+      "id": "playground",
+      "name": "Sports Complex & Playground",
+      "description": "A sprawling playground with cricket pitch, football field, basketball and volleyball courts, 200m athletic track, and indoor games room.",
+      "icon": "Dumbbell",
+      "image": "/images/campus/playground.webp",
+      "stats": "2 Acre Grounds"
+    },
+    {
+      "id": "auditorium",
+      "name": "Auditorium",
+      "description": "A 500-seat air-conditioned auditorium with professional sound and lighting systems for cultural programmes, seminars, and school assemblies.",
+      "icon": "Theater",
+      "image": "/images/campus/auditorium.webp",
+      "stats": "500 Seats"
+    },
+    {
+      "id": "art-room",
+      "name": "Art & Music Room",
+      "description": "A dedicated creative space with art supplies, musical instruments, and practice areas for drawing, painting, vocal, and instrumental music.",
+      "icon": "Palette",
+      "image": "/images/campus/art-room.webp",
+      "stats": "Fully Equipped"
+    },
+    {
+      "id": "medical",
+      "name": "Medical Room",
+      "description": "An on-campus medical room with a qualified nurse available during school hours for first aid and health emergencies. Regular health check-ups conducted.",
+      "icon": "Heart",
+      "image": "/images/campus/medical.webp",
+      "stats": "Full-time Nurse"
+    }
+  ],
+  "campusStats": {
+    "totalArea": "5 Acres",
+    "buildings": 4,
+    "classrooms": 60,
+    "laboratories": 5,
+    "libraryBooks": 15000,
+    "cctvCameras": 80
+  }
+}
