@@ -68,6 +68,15 @@ export default function Home() {
                 </span>
               </motion.div>
 
+              <motion.div
+                className="mt-6 mb-2 text-2xl md:text-3xl font-semibold text-white/90 font-heading tracking-wide"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.05 }}
+              >
+                மாதா பிதா <span className="text-secondary font-bold">குரு</span> தெய்வம்
+              </motion.div>
+
               <motion.h1
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-white leading-tight"
                 initial={{ opacity: 0, y: 30 }}
