@@ -44,11 +44,11 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2.5 group" aria-label="Kalaimahal School Home">
           <img src="/images/logo.jpg" alt="Kalaimahal School Logo" className="h-10 w-10 object-contain rounded-full shadow-sm group-hover:scale-105 transition-transform bg-white p-0.5" />
-          <div className="hidden sm:block">
-            <span className="text-base font-bold font-heading text-heading dark:text-dark-heading">
+          <div className="block">
+            <span className="text-xs sm:text-base font-bold font-heading text-heading dark:text-dark-heading leading-tight">
               Kalaimahal
             </span>
-            <span className="block text-[10px] text-text/60 dark:text-dark-text/60 -mt-1 font-medium">
+            <span className="block text-[9px] sm:text-[10px] text-text/60 dark:text-dark-text/60 -mt-0.5 font-medium leading-tight">
               Matric. School
             </span>
           </div>
@@ -130,7 +130,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-72 bg-white dark:bg-dark-bg shadow-2xl z-50 lg:hidden overflow-y-auto overscroll-contain"
+              className="fixed top-0 right-0 bottom-0 w-[85vw] max-w-[288px] bg-white dark:bg-dark-bg shadow-2xl z-50 lg:hidden overflow-y-auto overscroll-contain"
             >
               <div className="p-5 pb-24">
                 <div className="flex justify-between items-center mb-6">
