@@ -41,13 +41,13 @@ export default function Home() {
           <img
             src={assetPath('/images/gallery/school-building.webp')}
             alt="School Campus"
-            className="w-full h-full object-cover opacity-15 filter brightness-50 scale-105 transition-all duration-1000"
+            className="w-full h-full object-cover opacity-25 filter brightness-60 scale-105 transition-all duration-1000"
             onError={(e) => {
               e.target.style.display = 'none';
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/90 to-gray-950/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/85 to-gray-950/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/30 to-transparent" />
         </div>
 
         {/* Floating shapes */}
