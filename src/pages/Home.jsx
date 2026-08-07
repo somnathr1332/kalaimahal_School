@@ -41,7 +41,7 @@ export default function Home() {
           <img
             src={assetPath('/images/gallery/school-building.webp')}
             alt="School Campus"
-            className="w-full h-full object-cover opacity-60 scale-105 transition-all duration-1000"
+            className="w-full h-full object-cover opacity-50 scale-105 transition-all duration-1000"
             onError={(e) => {
               e.target.style.display = 'none';
             }}
