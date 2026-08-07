@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Youtube, MapPin, Phone, Mail, GraduationCap, ArrowUp } from 'lucide-react';
 import navigationData from '../../data/navigation.json';
 import schoolInfo from '../../data/schoolInfo.json';
+import { assetPath } from '../../utils/assetPath';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,7 +22,7 @@ const Footer = () => {
           {/* Column 1: About */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <img src="/images/logo.png" alt="Kalaimahal School Logo" className="h-10 w-10 object-contain rounded-full bg-white p-0.5" />
+              <img src={assetPath('/images/logo.png')} alt="Kalaimahal School Logo" className="h-10 w-10 object-contain rounded-full bg-white p-0.5" />
               <div>
                 <span className="text-base font-bold text-white font-heading">Kalaimahal</span>
                 <span className="block text-[10px] text-gray-400 -mt-1">Matric. School</span>

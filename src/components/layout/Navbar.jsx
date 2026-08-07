@@ -4,6 +4,7 @@ import { Menu, X, Sun, Moon } from 'lucide-react';
 import { ThemeContext } from '../../context/ThemeContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import navigationData from '../../data/navigation.json';
+import { assetPath } from '../../utils/assetPath';
 
 const navLinks = navigationData.mainNav;
 
@@ -40,7 +41,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 group" aria-label="Kalaimahal School Home">
             <img
-              src="/images/logo.jpg"
+              src={assetPath('/images/logo.jpg')}
               alt="Kalaimahal School Logo"
               className="h-10 w-10 object-contain rounded-full shadow-sm group-hover:scale-105 transition-transform bg-white p-0.5"
             />
@@ -125,7 +126,7 @@ const Navbar = () => {
             >
               {/* Nav Links */}
               <nav className="px-4 pt-3 pb-2 space-y-1">
-                {navLinks.map((link, i) => (
+                {navLinks.map((link) => (
                   <NavLink
                     key={link.to}
                     to={link.to}

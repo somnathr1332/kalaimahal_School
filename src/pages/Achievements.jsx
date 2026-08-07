@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SEO from '../components/ui/SEO';
 import { motion } from 'framer-motion';
 import { Award, Trophy, Music, GraduationCap, Star, Heart, Stethoscope, Landmark, Code } from 'lucide-react';
+import { assetPath } from '../utils/assetPath';
 import PageBanner from '../components/layout/PageBanner';
 import SectionHeading from '../components/ui/SectionHeading';
 import Card from '../components/ui/Card';
@@ -151,7 +152,7 @@ export default function Achievements() {
                   whileHover={{ scale: 1.05, boxShadow: "0 0 100px rgba(250,204,21,0.8)" }}
                 >
                   <div className="w-full h-full bg-transparent rounded-full overflow-hidden relative">
-                    <img src="/images/toppers/grade12/1.png" alt="Grade 12 Rank 1" className="w-full h-full object-cover object-top" />
+                    <img src={assetPath('/images/toppers/grade12/1.png')} alt="Grade 12 Rank 1" className="w-full h-full object-cover object-top" />
                     <div className="absolute inset-0 rounded-full shadow-[inset_0_0_40px_rgba(250,204,21,0.4)] pointer-events-none group-hover:shadow-[inset_0_0_20px_rgba(250,204,21,0.6)] transition-all duration-300 mix-blend-overlay" />
                   </div>
 
@@ -176,7 +177,7 @@ export default function Achievements() {
                   transition={{ opacity: { duration: 0.6 }, scale: { duration: 0.6 }, x: { duration: 0.6 }, y: { repeat: Infinity, duration: 4.5, ease: "easeInOut" } }}
                   whileHover={{ scale: 1.1, rotate: -5, boxShadow: "0 0 60px rgba(156,163,175,0.7)" }}
                 >
-                  <img src="/images/toppers/grade12/2.png" alt="Grade 12 Rank 2" className="w-full h-full object-cover object-top" />
+                  <img src={assetPath('/images/toppers/grade12/2.png')} alt="Grade 12 Rank 2" className="w-full h-full object-cover object-top" />
                   <div className="absolute inset-0 rounded-full shadow-[inset_0_0_20px_rgba(255,255,255,0.3)] pointer-events-none group-hover:shadow-[inset_0_0_15px_rgba(255,255,255,0.5)] transition-all duration-300 mix-blend-overlay" />
                 </motion.div>
 
@@ -197,7 +198,7 @@ export default function Achievements() {
                   transition={{ opacity: { duration: 0.6 }, scale: { duration: 0.6 }, x: { duration: 0.6 }, y: { repeat: Infinity, duration: 4, ease: "easeInOut" } }}
                   whileHover={{ scale: 1.1, rotate: 5, boxShadow: "0 0 60px rgba(180,83,9,0.7)" }}
                 >
-                  <img src="/images/toppers/grade12/3.png" alt="Grade 12 Rank 3" className="w-full h-full object-cover object-top" />
+                  <img src={assetPath('/images/toppers/grade12/3.png')} alt="Grade 12 Rank 3" className="w-full h-full object-cover object-top" />
                   <div className="absolute inset-0 rounded-full shadow-[inset_0_0_20px_rgba(255,255,255,0.3)] pointer-events-none group-hover:shadow-[inset_0_0_15px_rgba(255,255,255,0.5)] transition-all duration-300 mix-blend-overlay" />
                 </motion.div>
 
@@ -229,7 +230,7 @@ export default function Achievements() {
                   whileHover={{ scale: 1.05, boxShadow: "0 0 100px rgba(59,130,246,0.8)" }}
                 >
                   <div className="w-full h-full bg-transparent rounded-full overflow-hidden relative">
-                    <img src="/images/toppers/grade10/1.png" alt="Grade 10 Rank 1" className="w-full h-full object-cover object-top" />
+                    <img src={assetPath('/images/toppers/grade10/1.png')} alt="Grade 10 Rank 1" className="w-full h-full object-cover object-top" />
                     <div className="absolute inset-0 rounded-full shadow-[inset_0_0_40px_rgba(96,165,250,0.4)] pointer-events-none group-hover:shadow-[inset_0_0_20px_rgba(96,165,250,0.6)] transition-all duration-300 mix-blend-overlay" />
                   </div>
 
@@ -254,7 +255,7 @@ export default function Achievements() {
                   transition={{ opacity: { duration: 0.6 }, scale: { duration: 0.6 }, x: { duration: 0.6 }, y: { repeat: Infinity, duration: 4.2, ease: "easeInOut" } }}
                   whileHover={{ scale: 1.1, rotate: -5, boxShadow: "0 0 60px rgba(156,163,175,0.7)" }}
                 >
-                  <img src="/images/toppers/grade10/2.png" alt="Grade 10 Rank 2" className="w-full h-full object-cover object-top" />
+                  <img src={assetPath('/images/toppers/grade10/2.png')} alt="Grade 10 Rank 2" className="w-full h-full object-cover object-top" />
                   <div className="absolute inset-0 rounded-full shadow-[inset_0_0_20px_rgba(255,255,255,0.3)] pointer-events-none group-hover:shadow-[inset_0_0_15px_rgba(255,255,255,0.5)] transition-all duration-300 mix-blend-overlay" />
                 </motion.div>
 
@@ -275,7 +276,7 @@ export default function Achievements() {
                   transition={{ opacity: { duration: 0.6 }, scale: { duration: 0.6 }, x: { duration: 0.6 }, y: { repeat: Infinity, duration: 4.8, ease: "easeInOut" } }}
                   whileHover={{ scale: 1.1, rotate: 5, boxShadow: "0 0 60px rgba(180,83,9,0.7)" }}
                 >
-                  <img src="/images/toppers/grade10/3.png" alt="Grade 10 Rank 3" className="w-full h-full object-cover object-top" />
+                  <img src={assetPath('/images/toppers/grade10/3.png')} alt="Grade 10 Rank 3" className="w-full h-full object-cover object-top" />
                   <div className="absolute inset-0 rounded-full shadow-[inset_0_0_20px_rgba(255,255,255,0.3)] pointer-events-none group-hover:shadow-[inset_0_0_15px_rgba(255,255,255,0.5)] transition-all duration-300 mix-blend-overlay" />
                 </motion.div>
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import { assetPath } from '../../utils/assetPath';
 
 export default function GalleryGrid({ images, categories }) {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -47,7 +48,7 @@ export default function GalleryGrid({ images, categories }) {
               onClick={() => setLightboxImage(img)}
             >
               <img
-                src={img.src}
+                src={assetPath(img.src)}
                 alt={img.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
@@ -94,7 +95,7 @@ export default function GalleryGrid({ images, categories }) {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src={lightboxImage.src}
+                src={assetPath(lightboxImage.src)}
                 alt={lightboxImage.title}
                 className="max-w-full max-h-[80vh] object-contain rounded-lg"
                 onError={(e) => {

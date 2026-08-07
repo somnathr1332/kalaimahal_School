@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '../components/ui/SEO';
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 import {
   GraduationCap, Shield, Heart, Lightbulb, Users, Clock,
   Eye, Target, Quote, Phone, Mail, MapPin
@@ -70,7 +71,7 @@ export default function About() {
             >
               <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 shadow-xl">
                 <img
-                  src="/images/gallery/school-building.webp"
+                  src={assetPath('/images/gallery/school-building.webp')}
                   alt={schoolInfo.name}
                   className="w-full h-full object-cover"
                   onError={(e) => { e.target.style.display = 'none'; }}

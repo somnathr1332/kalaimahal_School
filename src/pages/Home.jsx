@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/ui/SEO';
 import { motion } from 'framer-motion';
+import { assetPath } from '../utils/assetPath';
 import {
   GraduationCap, Users, Trophy, TrendingUp, ArrowRight,
   BookOpen, FlaskConical, Blocks, Calendar, Star,
@@ -38,7 +39,7 @@ export default function Home() {
         {/* Background Image Overlay Loop */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/gallery/school-building.webp"
+            src={assetPath('/images/gallery/school-building.webp')}
             alt="School Campus"
             className="w-full h-full object-cover opacity-35 filter brightness-75 scale-105 transition-all duration-1000"
             onError={(e) => {
@@ -192,7 +193,7 @@ export default function Home() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 shadow-xl">
                   <img
-                    src="/images/gallery/school-building.webp"
+                    src={assetPath('/images/gallery/school-building.webp')}
                     alt="Kalaimahal School Building"
                     className="w-full h-full object-cover"
                     onError={(e) => { e.target.style.display = 'none'; }}

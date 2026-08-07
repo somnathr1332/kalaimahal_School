@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BookOpen, FlaskConical, Monitor, Presentation, Dumbbell, Theater, Palette, Heart, Building } from 'lucide-react';
+import { assetPath } from '../../utils/assetPath';
 
 const IconMap = {
   BookOpen,
@@ -28,7 +29,7 @@ export default function FacilityCard({ facility, index = 0 }) {
       {/* Image */}
       <div className="relative h-48 bg-gradient-to-br from-primary/10 to-primary/5 dark:from-primary/5 dark:to-primary/3 overflow-hidden">
         <img
-          src={facility.image}
+          src={assetPath(facility.image)}
           alt={facility.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           loading="lazy"
