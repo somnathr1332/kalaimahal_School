@@ -244,7 +244,7 @@ export default function About() {
                   {/* Image wrapper */}
                   <div className="relative h-44 bg-gradient-to-br from-primary/10 to-primary/5 dark:from-primary/5 dark:to-primary/3 overflow-hidden">
                     <img
-                      src={inst.image}
+                      src={assetPath(inst.image)}
                       alt={inst.name}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
