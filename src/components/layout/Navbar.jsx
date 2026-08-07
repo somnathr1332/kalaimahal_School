@@ -130,19 +130,37 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-[85vw] max-w-[288px] bg-white dark:bg-dark-bg shadow-2xl z-50 lg:hidden overflow-y-auto overscroll-contain"
+              className="fixed top-0 right-0 bottom-0 w-full xs:w-[85vw] max-w-[300px] bg-white dark:bg-dark-bg shadow-2xl z-50 lg:hidden overflow-y-auto overscroll-contain"
             >
-              <div className="p-5 pb-24">
-                <div className="flex justify-between items-center mb-6">
-                  <span className="font-bold text-heading dark:text-dark-heading font-heading">Menu</span>
-                  <button
-                    onClick={() => setMobileOpen(false)}
-                    className="p-1 rounded hover:bg-gray-100 dark:hover:bg-dark-card transition"
-                    aria-label="Close menu"
-                  >
-                    <X size={20} />
-                  </button>
-                </div>
+              {/* Drawer Header with school branding */}
+              <div className="flex items-center justify-between px-5 py-4 bg-gradient-to-r from-primary to-primary-700 text-white">
+                <Link
+                  to="/"
+                  className="flex items-center gap-2.5"
+                  onClick={() => setMobileOpen(false)}
+                  aria-label="Home"
+                >
+                  <img
+                    src="/images/logo.jpg"
+                    alt="Kalaimahal Logo"
+                    className="h-9 w-9 rounded-full object-contain bg-white p-0.5 shadow"
+                  />
+                  <div>
+                    <p className="text-sm font-bold font-heading leading-tight">Kalaimahal</p>
+                    <p className="text-[10px] text-white/80 leading-tight">Matric. Hr. Sec. School</p>
+                  </div>
+                </Link>
+                <button
+                  onClick={() => setMobileOpen(false)}
+                  className="p-1.5 rounded-lg bg-white/20 hover:bg-white/30 transition"
+                  aria-label="Close menu"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+
+              {/* Nav Links */}
+              <div className="p-4">
                 <div className="space-y-1">
                   {navLinks.map(link => (
                     <NavLink
@@ -151,8 +169,8 @@ const Navbar = () => {
                       className={({ isActive }) =>
                         `block px-4 py-3 rounded-lg text-sm font-medium transition-all ${
                           isActive
-                            ? 'text-primary bg-primary/5 dark:bg-primary/10'
-                            : 'text-text dark:text-dark-text hover:bg-gray-50 dark:hover:bg-dark-card'
+                            ? 'text-primary bg-primary/8 dark:bg-primary/15 font-semibold'
+                            : 'text-text dark:text-dark-text hover:bg-gray-50 dark:hover:bg-dark-card hover:text-primary dark:hover:text-primary-400'
                         }`
                       }
                       onClick={() => setMobileOpen(false)}
@@ -161,17 +179,19 @@ const Navbar = () => {
                     </NavLink>
                   ))}
                 </div>
-                <div className="mt-6 pt-4 border-t border-gray-200 dark:border-dark-border">
+
+                {/* CTA Buttons */}
+                <div className="mt-6 pt-4 border-t border-gray-200 dark:border-dark-border space-y-2">
                   <Link
                     to="/admissions"
-                    className="block w-full text-center px-4 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary-700 transition"
+                    className="flex items-center justify-center w-full px-4 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary-700 transition shadow-sm"
                     onClick={() => setMobileOpen(false)}
                   >
                     Apply Now
                   </Link>
                   <Link
                     to="/contact"
-                    className="block w-full text-center px-4 py-3 mt-2 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/5 transition"
+                    className="flex items-center justify-center w-full px-4 py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/5 transition"
                     onClick={() => setMobileOpen(false)}
                   >
                     Contact Us
