@@ -12,8 +12,8 @@ export default function Contact() {
   const onSubmit = (data) => {
     const message = `New Contact Form Submission:\n\nName: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nSubject: ${data.subject}\nMessage:\n${data.message}`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/919360293815?text=${encodedMessage}`;
-    window.open(whatsappUrl, '_blank');
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=919360293815&text=${encodedMessage}`;
+    window.location.href = whatsappUrl;
     reset(); // reset form after sending
   };
 
