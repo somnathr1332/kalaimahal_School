@@ -39,7 +39,7 @@ export default function Home() {
         {/* Background Image Overlay Loop */}
         <div className="absolute inset-0 z-0">
           <img
-            src={assetPath('/images/gallery/school-building.webp')}
+            src={assetPath('/images/gallery/home-hero.jpg')}
             alt="School Campus"
             className="w-full h-full object-cover opacity-50 scale-105 transition-all duration-1000"
             onError={(e) => {
@@ -202,7 +202,7 @@ export default function Home() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 shadow-xl">
                   <img
-                    src={assetPath('/images/gallery/school-building.webp')}
+                    src={assetPath('/images/gallery/home-hero.jpg')}
                     alt="Kalaimahal School Building"
                     className="w-full h-full object-cover"
                     onError={(e) => { e.target.style.display = 'none'; }}
