@@ -3,7 +3,7 @@
   "shortName": "Kalaimahal School",
   "abbreviation": "KMHSS",
   "tagline": "Knowledge is Power",
-  "foundedYear": 1970,
+  "foundedYear": 1978,
   "affiliationBoard": "Tamil Nadu State Board",
   "schoolCode": "KMHSS-001",
 
@@ -39,10 +39,10 @@
   },
 
   "principal": {
-    "name": "Dr. S. Ramanathan",
-    "qualification": "M.A., M.Ed., Ph.D.",
-    "experience": "30+ years in education",
-    "message": "At Kalaimahal Matriculation Higher Secondary School, we believe every child carries a spark of greatness. Our mission is to nurture that spark into a flame of knowledge, character, and purpose. With over five decades of dedicated service, we continue to evolve our teaching methods while holding firm to the timeless values of discipline, compassion, and academic rigour. I welcome you to join our family and experience the difference that holistic education makes."
+    "name": "Mr. K. Nedunchezhian",
+    "qualification": "M.A. (English)",
+    "experience": "Founder & Correspondent",
+    "message": "At Kalaimahal Educational Institutions, we believe every child carries a spark of greatness. Begun in 1978 as a tutorial centre, we have grown into a vast educational trust with unflinching determination and selfless service to humanity. Our mission is to promote education and impart moral, cultural, and ethical values for the students in rural areas."
   },
 
   "vision": "To be a beacon of academic excellence and character building, empowering students to become responsible global citizens who contribute meaningfully to society.",
@@ -83,25 +83,22 @@
   ],
 
   "stats": {
-    "yearsOfExcellence": 55,
+    "yearsOfExcellence": 48,
     "totalStudents": 2500,
     "totalFaculty": 120,
-    "passRate": 98.5,
+    "passRate": 100,
     "boardToppers": 45,
     "sportsAwards": 200,
     "campusAcres": 5
   },
 
   "milestones": [
-    { "year": 1970, "event": "School founded by Thiru. K. Sundaram with 50 students" },
-    { "year": 1978, "event": "Upgraded to Higher Secondary School" },
-    { "year": 1985, "event": "New science laboratory complex inaugurated" },
-    { "year": 1990, "event": "Celebrated Silver Jubilee — 25 years of excellence" },
-    { "year": 1995, "event": "Computer lab established; Kalaimahal batch achieves 100% pass rate" },
-    { "year": 2002, "event": "New auditorium and sports complex completed" },
-    { "year": 2008, "event": "Smart classroom initiative launched across all grades" },
-    { "year": 2015, "event": "Ranked among top 10 schools in Mayiladuthurai district" },
-    { "year": 2020, "event": "Golden Jubilee celebrations; Digital learning platform launched" },
-    { "year": 2025, "event": "55 years of excellence — State-of-the-art STEM lab inaugurated" }
+    { "year": 1978, "event": "Kalaimahal Tutorial centre founded by Mr. K. Nedunchezhian in Sembanarkoil" },
+    { "year": 1987, "event": "Kalaimahal Educational Trust founded on 7th December" },
+    { "year": 1995, "event": "Kalaimahal Matric. Hr. Sec. School - Mayiladuthurai started" },
+    { "year": 2005, "event": "Kalaimahal College of Education established in Sembanarkoil" },
+    { "year": 2008, "event": "Obtained second place in 10th std at district level and third in state level" },
+    { "year": 2009, "event": "Kalaimahal College of Arts & Science started" },
+    { "year": 2020, "event": "Kalaimahal College of Nursing established" }
   ]
 }
