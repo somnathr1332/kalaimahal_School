@@ -186,7 +186,7 @@ export default function Contact() {
       {/* Map Section */}
       <section className="h-96 w-full border-t border-gray-200 dark:border-dark-border">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15655.80521634568!2d79.64366632483863!3d11.10280549495764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a55225c56c2d1b7%3A0xe510c42289650b28!2sMayiladuthurai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1722368940000!5m2!1sen!2sin"
+          src="https://maps.google.com/maps?q=kalaimahal%20school%20sembanarkoil&t=&z=15&ie=UTF8&iwloc=&output=embed"
           className="w-full h-full border-none"
           allowFullScreen=""
           loading="lazy"
