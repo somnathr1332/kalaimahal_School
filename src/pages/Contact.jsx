@@ -10,8 +10,9 @@ export default function Contact() {
   const { register, handleSubmit, reset, formState: { errors, isSubmitSuccessful } } = useForm();
 
   const onSubmit = (data) => {
-    const text = `New Contact Form Submission:%0A%0AName: ${data.name}%0AEmail: ${data.email}%0APhone: ${data.phone}%0ASubject: ${data.subject}%0AMessage:%0A${data.message}`;
-    const whatsappUrl = `https://wa.me/919360293815?text=${text}`;
+    const message = `New Contact Form Submission:\n\nName: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nSubject: ${data.subject}\nMessage:\n${data.message}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/919360293815?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
     reset(); // reset form after sending
   };
