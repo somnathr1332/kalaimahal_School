@@ -10,8 +10,10 @@ export default function Contact() {
   const { register, handleSubmit, reset, formState: { errors, isSubmitSuccessful } } = useForm();
 
   const onSubmit = (data) => {
-    console.log('Contact form submitted:', data);
-    // Form submission simulation (would typically connect to EmailJS or backend API)
+    const text = `New Contact Form Submission:%0A%0AName: ${data.name}%0AEmail: ${data.email}%0APhone: ${data.phone}%0ASubject: ${data.subject}%0AMessage:%0A${data.message}`;
+    const whatsappUrl = `https://wa.me/919360293815?text=${text}`;
+    window.open(whatsappUrl, '_blank');
+    reset(); // reset form after sending
   };
 
   return (
