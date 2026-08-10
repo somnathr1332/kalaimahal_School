@@ -5,6 +5,7 @@ import { ThemeContext } from '../../context/ThemeContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import navigationData from '../../data/navigation.json';
 import { assetPath } from '../../utils/assetPath';
+import NewsTicker from '../ui/NewsTicker';
 
 const navLinks = navigationData.mainNav;
 
@@ -26,18 +27,18 @@ const Navbar = () => {
 
   return (
     <>
-      <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      <motion.header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex flex-col ${
           scrolled
             ? 'bg-white/95 dark:bg-dark-bg/95 backdrop-blur-md shadow-md border-b border-gray-200 dark:border-dark-border/50'
             : 'bg-white/80 dark:bg-dark-bg/85 backdrop-blur-md border-b border-gray-200/50 dark:border-dark-border/30'
         }`}
-        initial={{ y: -80 }}
+        initial={{ y: -120 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.4 }}
-        aria-label="Primary navigation"
       >
-        <div className="section-container flex items-center justify-between h-16">
+        <NewsTicker />
+        <nav className="section-container flex items-center justify-between h-16 w-full" aria-label="Primary navigation">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 group" aria-label="Kalaimahal School Home">
             <img
@@ -107,10 +108,9 @@ const Navbar = () => {
               aria-expanded={mobileOpen}
               aria-label="Toggle navigation menu"
             >
-              {mobileOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
-        </div>
+        </nav>
 
         {/* ── Mobile Dropdown Menu ── */}
         <AnimatePresence>
@@ -164,7 +164,7 @@ const Navbar = () => {
             </motion.div>
           )}
         </AnimatePresence>
-      </motion.nav>
+      </motion.header>
 
       {/* Backdrop */}
       <AnimatePresence>

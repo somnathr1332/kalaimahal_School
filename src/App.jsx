@@ -7,7 +7,6 @@ import Footer from './components/layout/Footer';
 import ScrollToTop from './components/layout/ScrollToTop';
 import Loader from './components/layout/Loader';
 import WhatsAppButton from './components/ui/WhatsAppButton';
-import NewsTicker from './components/ui/NewsTicker';
 
 // Lazy-loaded pages
 const Home = lazy(() => import('./pages/Home'));
@@ -34,7 +33,6 @@ function App() {
         <BrowserRouter basename={import.meta.env.BASE_URL}>
           <ScrollToTop />
           <div className="flex flex-col min-h-screen">
-            <NewsTicker />
             <Navbar />
             <main className="flex-grow pt-[104px]">
               <Suspense fallback={<Loader />}>
