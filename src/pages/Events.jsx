@@ -8,6 +8,42 @@ import CTABanner from '../components/ui/CTABanner';
 import eventsData from '../data/events.json';
 import schoolInfo from '../data/schoolInfo.json';
 
+const CalendarView = ({ events }) => {
+  const currentDate = new Date();
+  const daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+  const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
+  const monthName = currentDate.toLocaleString('default', { month: 'long', year: 'numeric' });
+  
+  const thisMonthEvents = events.filter(e => new Date(e.date).getMonth() === currentDate.getMonth());
+
+  return (
+    <div className="bg-white dark:bg-dark-card rounded-2xl shadow-sm border border-gray-100 dark:border-dark-border p-6 mb-12 max-w-4xl mx-auto">
+      <div className="flex justify-between items-center mb-6">
+        <h3 className="text-2xl font-bold font-heading text-heading dark:text-dark-heading">{monthName}</h3>
+        <div className="flex gap-2">
+          <button className="p-2 bg-gray-50 dark:bg-dark-bg rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">&lt;</button>
+          <button className="p-2 bg-gray-50 dark:bg-dark-bg rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">&gt;</button>
+        </div>
+      </div>
+      <div className="grid grid-cols-7 gap-2 mb-2 text-center text-xs font-semibold text-gray-400">
+        <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+      </div>
+      <div className="grid grid-cols-7 gap-2">
+        {Array.from({ length: firstDay }).map((_, i) => <div key={`empty-${i}`} className="p-2 md:p-4" />)}
+        {Array.from({ length: daysInMonth }).map((_, i) => {
+          const day = i + 1;
+          const hasEvent = thisMonthEvents.find(e => new Date(e.date).getDate() === day);
+          return (
+            <div key={day} className={`p-2 md:p-4 rounded-xl text-center text-sm md:text-base cursor-pointer transition-colors ${hasEvent ? 'bg-primary text-white font-bold shadow-md transform hover:scale-105' : 'text-heading dark:text-dark-heading bg-gray-50 dark:bg-dark-bg hover:bg-gray-100 dark:hover:bg-gray-800'}`}>
+              {day}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  );
+};
+
 export default function Events() {
   const [filter, setFilter] = useState('all');
 
@@ -72,6 +108,9 @@ export default function Events() {
             title="Upcoming Events"
             subtitle="Mark your calendar for these exciting upcoming events and important school schedules."
           />
+
+          {/* Interactive Calendar UI */}
+          <CalendarView events={eventsData.upcoming} />
 
           {filteredUpcoming.length === 0 ? (
             <div className="text-center p-12 glass rounded-2xl">

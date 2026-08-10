@@ -9,6 +9,8 @@
     { "name": "Events", "to": "/events" },
     { "name": "Admissions", "to": "/admissions" },
     { "name": "Alumni", "to": "/alumni" },
+    { "name": "Blog", "to": "/blog" },
+    { "name": "Resources", "to": "/resources" },
     { "name": "Contact", "to": "/contact" }
   ],
   "footerLinks": {

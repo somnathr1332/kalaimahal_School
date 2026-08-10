@@ -6,6 +6,8 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/layout/ScrollToTop';
 import Loader from './components/layout/Loader';
+import WhatsAppButton from './components/ui/WhatsAppButton';
+import NewsTicker from './components/ui/NewsTicker';
 
 // Lazy-loaded pages
 const Home = lazy(() => import('./pages/Home'));
@@ -17,6 +19,8 @@ const Achievements = lazy(() => import('./pages/Achievements'));
 const Events = lazy(() => import('./pages/Events'));
 const Admissions = lazy(() => import('./pages/Admissions'));
 const Alumni = lazy(() => import('./pages/Alumni'));
+const Blog = lazy(() => import('./pages/Blog'));
+const Resources = lazy(() => import('./pages/Resources'));
 const Contact = lazy(() => import('./pages/Contact'));
 const FAQ = lazy(() => import('./pages/FAQ'));
 const Privacy = lazy(() => import('./pages/Privacy'));
@@ -30,8 +34,9 @@ function App() {
         <BrowserRouter basename={import.meta.env.BASE_URL}>
           <ScrollToTop />
           <div className="flex flex-col min-h-screen">
+            <NewsTicker />
             <Navbar />
-            <main className="flex-grow pt-16">
+            <main className="flex-grow pt-[104px]">
               <Suspense fallback={<Loader />}>
                 <Routes>
                   <Route path="/" element={<Home />} />
@@ -43,6 +48,8 @@ function App() {
                   <Route path="/events" element={<Events />} />
                   <Route path="/admissions" element={<Admissions />} />
                   <Route path="/alumni" element={<Alumni />} />
+                  <Route path="/blog" element={<Blog />} />
+                  <Route path="/resources" element={<Resources />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/faq" element={<FAQ />} />
                   <Route path="/privacy" element={<Privacy />} />
@@ -52,6 +59,7 @@ function App() {
               </Suspense>
             </main>
             <Footer />
+            <WhatsAppButton />
           </div>
         </BrowserRouter>
       </ThemeProvider>

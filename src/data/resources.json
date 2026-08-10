@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Academic Calendar 2024-25",
+    "type": "PDF",
+    "size": "2.4 MB",
+    "category": "Calendars"
+  },
+  {
+    "id": 2,
+    "title": "Grade 10 Science Syllabus",
+    "type": "PDF",
+    "size": "1.1 MB",
+    "category": "Syllabus"
+  },
+  {
+    "id": 3,
+    "title": "Grade 12 Previous Year Question Papers (Maths)",
+    "type": "ZIP",
+    "size": "8.5 MB",
+    "category": "Exam Prep"
+  },
+  {
+    "id": 4,
+    "title": "School Uniform Guidelines & Dress Code",
+    "type": "PDF",
+    "size": "0.5 MB",
+    "category": "Guidelines"
+  },
+  {
+    "id": 5,
+    "title": "Hostel Rules & Regulations",
+    "type": "PDF",
+    "size": "1.2 MB",
+    "category": "Guidelines"
+  }
+]

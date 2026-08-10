@@ -258,3 +258,17 @@
     opacity: 0;
     transform: translateY(30px);
 }
+
+/* ===== Ticker Animation ===== */
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+    animation: ticker 25s linear infinite;
+}
+
+.animate-ticker:hover {
+    animation-play-state: paused;
+}

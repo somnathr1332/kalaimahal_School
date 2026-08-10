@@ -9,6 +9,46 @@ import AnimatedCounter from '../components/ui/AnimatedCounter';
 import CTABanner from '../components/ui/CTABanner';
 import campusData from '../data/campus.json';
 import schoolInfo from '../data/schoolInfo.json';
+import { MapPin } from 'lucide-react';
+
+const InteractiveMap = () => {
+  const mapLocations = [
+    { name: "Main Block", x: "20%", y: "30%", color: "bg-blue-500", desc: "Administrative offices and senior classrooms" },
+    { name: "Science Labs", x: "45%", y: "45%", color: "bg-purple-500", desc: "Physics, Chemistry, and Biology labs" },
+    { name: "Library", x: "70%", y: "25%", color: "bg-emerald-500", desc: "Central library with 15k+ books" },
+    { name: "Sports Ground", x: "60%", y: "75%", color: "bg-orange-500", desc: "Football field and athletic tracks" },
+    { name: "Auditorium", x: "25%", y: "65%", color: "bg-rose-500", desc: "Main event hall with 1000+ seating" }
+  ];
+
+  return (
+    <div className="relative w-full max-w-4xl mx-auto h-[400px] bg-gray-100 dark:bg-gray-800 rounded-3xl border-4 border-white dark:border-dark-border shadow-inner overflow-hidden mb-16">
+      {/* Background Pattern for Map */}
+      <div className="absolute inset-0 opacity-10 bg-[linear-gradient(45deg,#000_25%,transparent_25%,transparent_75%,#000_75%,#000_100%),linear-gradient(45deg,#000_25%,transparent_25%,transparent_75%,#000_75%,#000_100%)] bg-[length:20px_20px] bg-[position:0_0,10px_10px]"></div>
+      
+      {/* Locations */}
+      {mapLocations.map((loc, i) => (
+        <div key={i} className="absolute group cursor-pointer" style={{ left: loc.x, top: loc.y }}>
+          <div className="relative -ml-4 -mt-4">
+            <div className={`w-8 h-8 rounded-full ${loc.color} text-white flex items-center justify-center shadow-lg transform group-hover:scale-125 transition-all z-10 relative`}>
+              <MapPin size={16} />
+            </div>
+            {/* Ping animation */}
+            <div className={`absolute inset-0 rounded-full ${loc.color} animate-ping opacity-75`}></div>
+            
+            {/* Tooltip */}
+            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 bg-white dark:bg-dark-card text-heading dark:text-dark-heading px-4 py-2 rounded-xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-20 border border-gray-100 dark:border-dark-border">
+              <h4 className="font-bold">{loc.name}</h4>
+              <p className="text-xs text-text/70 dark:text-dark-text/70 mt-0.5">{loc.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+      <div className="absolute bottom-4 right-4 bg-white/80 dark:bg-dark-card/80 backdrop-blur-sm px-4 py-2 rounded-lg text-xs font-semibold shadow-sm">
+        Hover over pins to explore
+      </div>
+    </div>
+  );
+};
 
 export default function Campus() {
   return (
@@ -53,6 +93,18 @@ export default function Campus() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Interactive Map */}
+      <section className="section-padding bg-background dark:bg-dark-bg border-b border-gray-100 dark:border-dark-border">
+        <div className="section-container">
+          <SectionHeading
+            title="Interactive Campus Map"
+            subtitle="Explore our sprawling 5-acre campus and locate key facilities."
+            alignment="center"
+          />
+          <InteractiveMap />
         </div>
       </section>
 
