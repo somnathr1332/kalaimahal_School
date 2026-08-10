@@ -8,6 +8,7 @@
     { "name": "Achievements", "to": "/achievements" },
     { "name": "Events", "to": "/events" },
     { "name": "Admissions", "to": "/admissions" },
+    { "name": "Alumni", "to": "/alumni" },
     { "name": "Contact", "to": "/contact" }
   ],
   "footerLinks": {

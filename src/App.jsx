@@ -16,6 +16,7 @@ const Gallery = lazy(() => import('./pages/Gallery'));
 const Achievements = lazy(() => import('./pages/Achievements'));
 const Events = lazy(() => import('./pages/Events'));
 const Admissions = lazy(() => import('./pages/Admissions'));
+const Alumni = lazy(() => import('./pages/Alumni'));
 const Contact = lazy(() => import('./pages/Contact'));
 const FAQ = lazy(() => import('./pages/FAQ'));
 const Privacy = lazy(() => import('./pages/Privacy'));
@@ -41,6 +42,7 @@ function App() {
                   <Route path="/achievements" element={<Achievements />} />
                   <Route path="/events" element={<Events />} />
                   <Route path="/admissions" element={<Admissions />} />
+                  <Route path="/alumni" element={<Alumni />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/faq" element={<FAQ />} />
                   <Route path="/privacy" element={<Privacy />} />
