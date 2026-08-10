@@ -124,9 +124,14 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-gray-800">
         <div className="section-container py-5 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-sm text-gray-500">
-            &copy; {currentYear} {schoolInfo.shortName}. All rights reserved.
-          </p>
+          <div className="text-center md:text-left">
+            <p className="text-sm text-gray-500">
+              &copy; {currentYear} {schoolInfo.shortName}. All rights reserved.
+            </p>
+            <p className="text-xs text-gray-600 mt-1">
+              Designed by <a href="https://student2techie.in/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">studenttotechie</a>
+            </p>
+          </div>
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <Link to="/privacy" className="hover:text-gray-300 transition">Privacy</Link>
             <span>·</span>
