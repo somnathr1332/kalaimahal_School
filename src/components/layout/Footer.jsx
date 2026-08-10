@@ -128,9 +128,12 @@ const Footer = () => {
             <p className="text-sm text-gray-500">
               &copy; {currentYear} {schoolInfo.shortName}. All rights reserved.
             </p>
-            <p className="text-xs text-gray-600 mt-1">
-              Designed by <a href="https://student2techie.in/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">studenttotechie</a>
-            </p>
+            <div className="flex items-center justify-center md:justify-start gap-2 mt-2">
+              <span className="text-xs text-gray-600">Designed by</span>
+              <a href="https://student2techie.in/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity flex items-center">
+                <img src={assetPath('/images/student2techie-logo.png')} alt="Student2Techie" className="h-6 w-auto object-contain rounded" />
+              </a>
+            </div>
           </div>
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <Link to="/privacy" className="hover:text-gray-300 transition">Privacy</Link>
