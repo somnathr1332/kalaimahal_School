@@ -63,8 +63,8 @@ export default function PromoPopup() {
                 alt="Admissions Announcement" 
                 className="w-full h-auto max-h-[85vh] object-contain"
                 onError={(e) => {
-                  e.target.style.display = 'none';
-                  handleClose(); // Close the popup if image fails to load
+                  // Fallback if image is not loaded yet (CDN propagation)
+                  e.target.alt = 'Image is loading or missing...';
                 }}
               />
             </div>
