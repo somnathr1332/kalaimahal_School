@@ -159,8 +159,21 @@ export default function About() {
               <Quote size={40} className="text-primary/10 absolute top-6 right-6" />
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-primary-600 flex items-center justify-center text-white text-2xl font-bold font-heading shadow-lg">
-                    {schoolInfo.principal.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                  <div className="relative w-32 h-32 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-dark-card group">
+                    <img 
+                      src={assetPath('/images/founder.jpg')} 
+                      alt={schoolInfo.principal.name}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextElementSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div 
+                      className="absolute inset-0 bg-gradient-to-br from-primary to-primary-600 hidden items-center justify-center text-white text-4xl md:text-5xl font-bold font-heading"
+                    >
+                      {schoolInfo.principal.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                    </div>
                   </div>
                 </div>
                 <div>

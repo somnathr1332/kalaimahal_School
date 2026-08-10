@@ -17,6 +17,7 @@ import schoolInfo from '../data/schoolInfo.json';
 import academicsData from '../data/academics.json';
 import testimonials from '../data/testimonials.json';
 import eventsData from '../data/events.json';
+import PromoPopup from '../components/ui/PromoPopup';
 
 const iconMap = { Blocks, BookOpen, FlaskConical, GraduationCap };
 
@@ -349,6 +350,8 @@ export default function Home() {
 
       {/* ===== CTA ===== */}
       <CTABanner />
+
+      <PromoPopup />
     </>
   );
 }
