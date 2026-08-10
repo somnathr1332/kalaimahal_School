@@ -47,7 +47,7 @@ export default function PromoPopup() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-md md:max-w-lg lg:max-w-xl mx-auto"
+            className="relative w-[95%] sm:max-w-md md:w-auto md:max-w-fit mx-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -57,11 +57,11 @@ export default function PromoPopup() {
             >
               <X size={20} />
             </button>
-            <div className="bg-white rounded-2xl overflow-hidden shadow-2xl relative">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-2xl relative flex justify-center">
               <img 
                 src={assetPath(currentImage)} 
                 alt="Admissions Announcement" 
-                className="w-full h-auto max-h-[85vh] object-contain"
+                className="w-full md:w-auto h-auto max-h-[85vh] md:max-h-[70vh] object-contain"
                 onError={(e) => {
                   // Fallback if image is not loaded yet (CDN propagation)
                   e.target.alt = 'Image is loading or missing...';
