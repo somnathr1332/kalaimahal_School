@@ -108,6 +108,7 @@ const Navbar = () => {
               aria-expanded={mobileOpen}
               aria-label="Toggle navigation menu"
             >
+              {mobileOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </nav>
