@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ClipboardList, FileText, PenTool, MessageSquare, CheckCircle, Calendar, Download, ShieldCheck } from 'lucide-react';
 import PageBanner from '../components/layout/PageBanner';
 import SectionHeading from '../components/ui/SectionHeading';
-import Timeline from '../components/ui/Timeline';
+
 import admissionsData from '../data/admissions.json';
 import schoolInfo from '../data/schoolInfo.json';
 
@@ -30,17 +30,6 @@ export default function Admissions() {
         subtitle="Secure your child's seat in one of Mayiladuthurai's premier academic institutions"
         breadcrumbs={[{ label: 'Admissions' }]}
       />
-
-      {/* Process Flow */}
-      <section className="section-padding bg-background dark:bg-dark-bg">
-        <div className="section-container">
-          <SectionHeading
-            title="Admission Process"
-            subtitle="Follow these simple steps to register and enroll your child at our school."
-          />
-          <Timeline items={admissionsData.process} />
-        </div>
-      </section>
 
       {/* Eligibility & Documents */}
       <section className="section-padding bg-white dark:bg-dark-card/30">
