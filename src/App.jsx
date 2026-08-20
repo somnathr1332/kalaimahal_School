@@ -7,6 +7,7 @@ import Footer from './components/layout/Footer';
 import ScrollToTop from './components/layout/ScrollToTop';
 import Loader from './components/layout/Loader';
 import WhatsAppButton from './components/ui/WhatsAppButton';
+import Chatbot from './components/ui/Chatbot';
 
 // Lazy-loaded pages
 const Home = lazy(() => import('./pages/Home'));
@@ -58,6 +59,7 @@ function App() {
             </main>
             <Footer />
             <WhatsAppButton />
+            <Chatbot />
           </div>
         </BrowserRouter>
       </ThemeProvider>
