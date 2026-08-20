@@ -24,8 +24,12 @@ const Chatbot = () => {
     if (!input.trim()) return;
 
     const userMessage = input.trim();
-    setMessages(prev => [...prev, { text: userMessage, isUser: true }]);
     setInput('');
+    processMessage(userMessage);
+  };
+
+  const processMessage = (userMessage) => {
+    setMessages(prev => [...prev, { text: userMessage, isUser: true }]);
 
     // Simple bot logic
     setTimeout(() => {
@@ -64,6 +68,10 @@ const Chatbot = () => {
     }, 500);
   };
 
+  const suggestions = [
+    "Admissions", "11th Curriculum", "Facilities", "Sports", "Contact"
+  ];
+
   return (
     <>
       {/* Chatbot Toggle Button */}
@@ -72,7 +80,7 @@ const Chatbot = () => {
         className="fixed bottom-24 right-6 z-50 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center"
         aria-label="Toggle Chatbot"
       >
-        {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
+        {isOpen ? <X size={24} /> : <Bot size={24} />}
       </button>
 
       {/* Chatbot Window */}
@@ -117,6 +125,22 @@ const Chatbot = () => {
                   </div>
                 </div>
               ))}
+              
+              {/* Suggestions */}
+              {messages.length === 1 && (
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {suggestions.map((sugg, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => processMessage(sugg)}
+                      className="bg-blue-100 text-blue-700 hover:bg-blue-200 px-3 py-1.5 rounded-full text-xs font-medium transition-colors"
+                    >
+                      {sugg}
+                    </button>
+                  ))}
+                </div>
+              )}
+              
               <div ref={messagesEndRef} />
             </div>
 
