@@ -52,6 +52,8 @@ const Chatbot = () => {
         botResponse = `Our ${schoolInfo.stats.campusAcres}-acre campus includes a hygienic canteen, comprehensive sports facilities, smart classrooms, and a dedicated yoga room.`;
       } else if (lowerInput.includes('transport') || lowerInput.includes('bus')) {
         botResponse = 'Yes, the school operates a fleet of buses covering major routes in and around Mayiladuthurai. Please contact the office for routes and fees.';
+      } else if (lowerInput.includes('curriculum') || lowerInput.includes('stream') || lowerInput.includes('group') || lowerInput.includes('11') || lowerInput.includes('12') || lowerInput.includes('10')) {
+        botResponse = 'For Higher Secondary (11 & 12), we offer: Science with Maths (Physics, Chemistry, Maths, Comp Sci), Science with Biology (Physics, Chemistry, Biology, Zoology), and Commerce (Accountancy, Commerce, Economics, Business Maths/Comp App).';
       } else if (lowerInput.includes('hi') || lowerInput.includes('hello')) {
         botResponse = 'Hello! How can I assist you today?';
       } else {
