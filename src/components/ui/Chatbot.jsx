@@ -8,6 +8,9 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([
     { text: `Hi! I'm the ${schoolInfo.shortName} assistant. How can I help you today?`, isUser: false }
   ]);
+  const [currentSuggestions, setCurrentSuggestions] = useState([
+    "Admissions", "11th Curriculum", "Facilities", "Sports", "Contact"
+  ]);
   const [input, setInput] = useState('');
   const messagesEndRef = useRef(null);
 
@@ -30,47 +33,58 @@ const Chatbot = () => {
 
   const processMessage = (userMessage) => {
     setMessages(prev => [...prev, { text: userMessage, isUser: true }]);
+    setCurrentSuggestions([]);
 
     // Simple bot logic
     setTimeout(() => {
       const lowerInput = userMessage.toLowerCase();
-      let botResponse = '';
+      let newSuggestions = [];
 
       if (lowerInput.includes('admission') || lowerInput.includes('join')) {
         botResponse = 'For admissions, please visit our Admissions page or contact our office during working hours.';
+        newSuggestions = ["Fees", "11th Curriculum", "Contact"];
       } else if (lowerInput.includes('contact') || lowerInput.includes('phone') || lowerInput.includes('call')) {
         botResponse = `You can reach us at ${schoolInfo.contact.phone.join(', ')} or email us at ${schoolInfo.contact.email}.`;
+        newSuggestions = ["Address", "Timings", "Admissions"];
       } else if (lowerInput.includes('fee')) {
         botResponse = 'For detailed fee structures, please contact our administrative office directly.';
+        newSuggestions = ["Admissions", "Contact"];
       } else if (lowerInput.includes('timing') || lowerInput.includes('hours') || lowerInput.includes('time')) {
         botResponse = `Our school hours are ${schoolInfo.timings.schoolHours}. Office hours are ${schoolInfo.timings.officeHours}, ${schoolInfo.timings.workingDays}.`;
+        newSuggestions = ["Contact", "Address"];
       } else if (lowerInput.includes('address') || lowerInput.includes('location') || lowerInput.includes('where')) {
         botResponse = `We are located at ${schoolInfo.address.street}, ${schoolInfo.address.area}, ${schoolInfo.address.city}, ${schoolInfo.address.pincode}.`;
+        newSuggestions = ["Transport", "Contact"];
       } else if (lowerInput.includes('principal') || lowerInput.includes('head')) {
         botResponse = `Our Principal is ${schoolInfo.principal.name}, ${schoolInfo.principal.qualification}.`;
+        newSuggestions = ["Achievements", "Facilities"];
       } else if (lowerInput.includes('sports') || lowerInput.includes('games') || lowerInput.includes('extracurricular')) {
         botResponse = `Our campus features a cricket pitch, football field, basketball court, and more. We have won ${schoolInfo.stats.sportsAwards} sports awards!`;
+        newSuggestions = ["Facilities", "Achievements"];
       } else if (lowerInput.includes('achievement') || lowerInput.includes('topper') || lowerInput.includes('pass')) {
         botResponse = `We proudly maintain a ${schoolInfo.stats.passRate}% pass rate with ${schoolInfo.stats.boardToppers} board toppers over our ${schoolInfo.stats.yearsOfExcellence} years of excellence.`;
+        newSuggestions = ["11th Curriculum", "Sports"];
       } else if (lowerInput.includes('facility') || lowerInput.includes('infrastructure') || lowerInput.includes('campus')) {
         botResponse = `Our ${schoolInfo.stats.campusAcres}-acre campus includes a hygienic canteen, comprehensive sports facilities, smart classrooms, and a dedicated yoga room.`;
+        newSuggestions = ["Sports", "Transport"];
       } else if (lowerInput.includes('transport') || lowerInput.includes('bus')) {
         botResponse = 'Yes, the school operates a fleet of buses covering major routes in and around Mayiladuthurai. Please contact the office for routes and fees.';
+        newSuggestions = ["Address", "Contact"];
       } else if (lowerInput.includes('curriculum') || lowerInput.includes('stream') || lowerInput.includes('group') || lowerInput.includes('11') || lowerInput.includes('12') || lowerInput.includes('10')) {
         botResponse = 'For Higher Secondary (11 & 12), we offer: Science with Maths (Physics, Chemistry, Maths, Comp Sci), Science with Biology (Physics, Chemistry, Biology, Zoology), and Commerce (Accountancy, Commerce, Economics, Business Maths/Comp App).';
+        newSuggestions = ["Admissions", "Fees", "Achievements"];
       } else if (lowerInput.includes('hi') || lowerInput.includes('hello')) {
         botResponse = 'Hello! How can I assist you today?';
+        newSuggestions = ["Admissions", "11th Curriculum", "Facilities", "Sports", "Contact"];
       } else {
         botResponse = `I'm sorry, I don't have the answer to that. Please reach out to us directly at ${schoolInfo.contact.phone[0]} or ${schoolInfo.contact.email}.`;
+        newSuggestions = ["Admissions", "Facilities", "Contact"];
       }
 
       setMessages(prev => [...prev, { text: botResponse, isUser: false }]);
+      setCurrentSuggestions(newSuggestions);
     }, 500);
   };
-
-  const suggestions = [
-    "Admissions", "11th Curriculum", "Facilities", "Sports", "Contact"
-  ];
 
   return (
     <>
@@ -127,9 +141,9 @@ const Chatbot = () => {
               ))}
               
               {/* Suggestions */}
-              {messages.length === 1 && (
+              {currentSuggestions.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-4">
-                  {suggestions.map((sugg, idx) => (
+                  {currentSuggestions.map((sugg, idx) => (
                     <button
                       key={idx}
                       onClick={() => processMessage(sugg)}
